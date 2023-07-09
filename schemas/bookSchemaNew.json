@@ -1,0 +1,94 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "isbn",
+        "author",
+        "language",
+        "pages",
+        "publisher",
+        "title",
+        "year"
+    ],
+    "properties": {
+        "isbn": {
+            "type": "string",
+            "default": "",
+            "title": "The isbn Schema",
+            "examples": [
+                "1250177960"
+            ]
+        },
+        "amazon_url": {
+            "type": "string",
+            "default": "",
+            "title": "The amazon_url Schema",
+            "examples": [
+                "https://www.amazon.com/Check-Please-Hockey-Ngozi-Ukazu/dp/1250177960"
+            ]
+        },
+        "author": {
+            "type": "string",
+            "default": "",
+            "title": "The author Schema",
+            "examples": [
+                "Ngozi Ukazu"
+            ]
+        },
+        "language": {
+            "type": "string",
+            "default": "",
+            "title": "The language Schema",
+            "examples": [
+                "English"
+            ]
+        },
+        "pages": {
+            "type": "integer",
+            "default": 0,
+            "title": "The pages Schema",
+            "examples": [
+                288
+            ]
+        },
+        "publisher": {
+            "type": "string",
+            "default": "",
+            "title": "The publisher Schema",
+            "examples": [
+                "First Second"
+            ]
+        },
+        "title": {
+            "type": "string",
+            "default": "",
+            "title": "The title Schema",
+            "examples": [
+                "Check, Please! Book 1: # Hockey"
+            ]
+        },
+        "year": {
+            "type": "integer",
+            "default": 0,
+            "title": "The year Schema",
+            "examples": [
+                2018
+            ]
+        }
+    },
+    "examples": [
+        {
+            "isbn": "1250177960",
+            "amazon_url": "https://www.amazon.com/Check-Please-Hockey-Ngozi-Ukazu/dp/1250177960",
+            "author": "Ngozi Ukazu",
+            "language": "English",
+            "pages": 288,
+            "publisher": "First Second",
+            "title": "Check, Please! Book 1: # Hockey",
+            "year": 2018
+        }
+    ]
+}
